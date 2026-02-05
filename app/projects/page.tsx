@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <main>
+    <main className={styles.page}>
       <nav className="flex items-center justify-between p-4"> 
           <Link href="/">
             <img src="/images/OTLlogo.jpeg" alt="Website Logo" width="160" height="80" />
