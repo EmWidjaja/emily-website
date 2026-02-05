@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* :root {
+:root {
   --background: #ffffff;
   --foreground: #000000;
 }
@@ -9,9 +9,9 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
-} */
+}
 
-.page {
+/* .page {
   background-color: white;
   color: black;
   min-height: 100vh;
@@ -22,5 +22,5 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-}
+} */
 
