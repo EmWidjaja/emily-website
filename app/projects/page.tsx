@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from './projects.module.css';
 
 export const metadata = {
   title: 'OTL studios',
@@ -12,7 +13,7 @@ export default function Projects() {
     <main>
       <nav className="flex items-center justify-between p-4"> 
           <Link href="/">
-            <img src="/images/OTLlogo.jpeg" alt="Website Logo" width="120" height="60" />
+            <img src="/images/OTLlogo.jpeg" alt="Website Logo" width="160" height="80" />
           </Link>
 
           <div className="nav-links" id="navLinks">
