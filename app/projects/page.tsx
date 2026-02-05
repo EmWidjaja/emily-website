@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'OTL studios'
+}
+
 export default function Projects() {
   return (
     <main className="p-8">
