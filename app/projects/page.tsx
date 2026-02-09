@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaShoppingCart } from 'react-icons/fa';
 import styles from './projects.module.css';
 
 export const metadata = {
@@ -11,20 +12,29 @@ export const metadata = {
 export default function Projects() {
   return (
     <main className={styles.page}>
-      <nav className="flex items-center justify-between p-4"> 
-          <Link href="/">
-            <img src="/images/OTLlogo.jpeg" alt="Website Logo" width="160" height="80" />
-          </Link>
+      <nav className="grid grid-cols-3 items-center px-6 py-4"> 
+          <div className="justify-self-start">
+            <Link href="/">
+              <img src="/images/OTLlogo.jpeg" alt="Website Logo" width="160" height="80" />
+            </Link>
+          </div>
 
           <div className="nav-links" id="navLinks">
-            <ul className="flex gap-4">
-              <li><Link href="/Shop">Shop</Link></li>
-              <li><Link href="/About">About</Link></li>
-              <li><Link href="/Read">Read</Link></li>
-              <li><Link href="/Events">Events</Link></li>
-              <li><Link href="/FAQ">FAQ</Link></li>
+            <ul className="flex justify-center gap-8">
+              <li className={styles.shop}><Link href="/Shop">SHOP</Link></li>
+              <li className={styles.about}><Link href="/About">ABOUT</Link></li>
+              <li className={styles.read}><Link href="/Read">READ</Link></li>
+              <li className={styles.events}><Link href="/Events">EVENTS</Link></li>
+              <li className={styles.faq}><Link href="/FAQ">FAQ</Link></li>
             </ul>
           </div>
+
+          <div className="justify-self-end">
+          <Link href="/cart" aria-label="Shopping cart">
+            <FaShoppingCart className="text-2xl hover:opacity-70 transition cursor-pointer" />
+          </Link>
+        </div>
+
         </nav>
     </main>
   );
